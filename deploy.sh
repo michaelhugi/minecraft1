@@ -1,16 +1,21 @@
 #!/bin/bash
 
-# Configuration
+# --- Configuration ---
 SERVER_USER="mihu"
 SERVER_IP="192.168.0.201"
 DEST_DIR="/mnt/containers/minecraft1"
+LOCAL_SRC="./server_files/"
+MC_SERVICE_NAME="mc1" # This must match the name in your docker-compose.yml
 
-echo "🚀 Deploying Minecraft Create Mod files to $SERVER_IP..."
+echo "🚚 1. Syncing files and deleting removed mods..."
+# --delete ensures server matches laptop exactly
+rsync -avz --delete "$LOCAL_SRC" "$SERVER_USER@$SERVER_IP:$DEST_DIR/"
 
-# 1. Create remote directories if they don't exist
-ssh $SERVER_USER@$SERVER_IP "mkdir -p $DEST_DIR/mods $DEST_DIR/config"
+echo "🔧 2. Fixing permissions..."
+ssh "$SERVER_USER@$SERVER_IP" "sudo chown -R $SERVER_USER:$SERVER_USER $DEST_DIR && chmod -R 775 $DEST_DIR"
 
-# 2. Sync local files to the server
-# (We will add the rsync command here once we have your mods ready)
+echo "🔄 3. Restarting Minecraft container ($MC_SERVICE_NAME)..."
+# We use 'podman compose' to restart only the mc1 service
+ssh "$SERVER_USER@$SERVER_IP" "cd $DEST_DIR && podman compose restart $MC_SERVICE_NAME"
 
-echo "✅ Deployment complete!"
+echo "✅ Deployment and Restart complete!"
