@@ -542,3 +542,9 @@ Allows Sophisticated Storage blocks to work with Create's systems.
 
 ## Better Modlist
 A visual overhaul for the in-game mod list screen.
+
+## Ultimate Factory
+An addon for the Create mod developed to increase automation possibilities, adding 30 (reasonably) balanced recipes to the game.
+
+## Create More Recipes
+Add more recipes type related to Create
