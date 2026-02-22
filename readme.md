@@ -551,3 +551,7 @@ Add more recipes type related to Create
 
 ## Some More Blocks
 A Minecraft Mod with 500+ new blocks.
+
+## Interiors
+A complement to the Create mod that adds new, functional furniture.
+
