@@ -10,6 +10,19 @@
     "supplementaries:way_sign_mangrove",
     "supplementaries:way_sign_bamboo",
     "supplementaries:way_sign_crimson",
-    "supplementaries:way_sign_warped"
+    "supplementaries:way_sign_warped",
+    "supplementaries:biomesoplenty/way_sign_fir",
+    "supplementaries:biomesoplenty/way_sign_pine",
+    "supplementaries:biomesoplenty/way_sign_maple",
+    "supplementaries:biomesoplenty/way_sign_redwood",
+    "supplementaries:biomesoplenty/way_sign_mahogany",
+    "supplementaries:biomesoplenty/way_sign_jacaranda",
+    "supplementaries:biomesoplenty/way_sign_palm",
+    "supplementaries:biomesoplenty/way_sign_willow",
+    "supplementaries:biomesoplenty/way_sign_dead",
+    "supplementaries:biomesoplenty/way_sign_magic",
+    "supplementaries:biomesoplenty/way_sign_umbran",
+    "supplementaries:biomesoplenty/way_sign_hellbark",
+    "supplementaries:biomesoplenty/way_sign_empyreal"
   ]
 }
