@@ -1,0 +1,19 @@
+services:
+  mc-test:
+    image: docker.io/itzg/minecraft-server:latest
+    container_name: mc-local-test
+    # This tells podman-compose NOT to create a pod for this service
+    annotations:
+      com.github.containers.podman-compose.no-pod: "true"
+    userns_mode: "keep-id"
+    user: "1000:1000"
+    environment:
+      EULA: "TRUE"
+      TYPE: "NEOFORGE"
+      VERSION: "1.21.1"
+      MEMORY: "6G"
+    volumes:
+      - ./test:/data:z
+    ports:
+      - "25565:25565"
+    restart: "no"
