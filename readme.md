@@ -548,3 +548,6 @@ An addon for the Create mod developed to increase automation possibilities, addi
 
 ## Create More Recipes
 Add more recipes type related to Create
+
+## Some More Blocks
+A Minecraft Mod with 500+ new blocks.
