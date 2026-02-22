@@ -9,7 +9,7 @@
 [basin_cooking]
 	enabled = true
 	replace_fluid_containers = true
-	#Allowed Values: NONE, HEATED, SUPERHEATED
+	#Allowed Values: NONE, HEATED, SUPERHEATED, FROZEN, COOLED
 	heat_condition = "HEATED"
 
 [sprinkler]

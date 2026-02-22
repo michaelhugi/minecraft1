@@ -303,6 +303,9 @@
 			hellbark = true
 			empyreal = true
 
+		[types.wood_type.create_mf]
+			cultural = true
+
 		[types.leaves_type.biomesoplenty]
 			null = true
 			origin = true
@@ -393,3 +396,29 @@
 			orange_spruce = true
 			red_spruce = true
 			white_flower_spruce = true
+
+		[types.leaves_type.create_mf]
+			cultural = true
+
+		[types.cake.createfood]
+			cream_cake_chorus_fruit = true
+			cream_cake_glow_berry = true
+			berry_cream_cake_sweet_berry = true
+			berry_cream_cake_chorus_fruit = true
+			berry_cream_cake_glow_berry = true
+			chocolate_cream_cake_butterscotch = true
+			chocolate_cream_cake_caramel = true
+			chocolate_cream_cake_chocolate = true
+			chocolate_cream_cake_dark_chocolate = true
+			chocolate_cream_cake_toffee = true
+			chocolate_cream_cake_white_chocolate = true
+			chorus_fruit_cream_cake_sweet_berry = true
+			chorus_fruit_cream_cake_chorus_fruit = true
+			chorus_fruit_cream_cake_glow_berry = true
+			glow_berry_cream_cake_sweet_berry = true
+			glow_berry_cream_cake_chorus_fruit = true
+			glow_berry_cream_cake_glow_berry = true
+
+		[types.cake.createaddition]
+			chocolate_cake = true
+			honey_cake = true

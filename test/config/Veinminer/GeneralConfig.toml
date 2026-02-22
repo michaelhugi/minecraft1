@@ -1,0 +1,49 @@
+
+[General]
+	#Enable or disable Veinminer entirely
+	veinminerEnabled = true
+	#Require the player to crouch (sneak) to activate Veinminer
+	requireCrouch = true
+	#Prevent Veinminer from activating if tool would break
+	checkToolDurability = true
+	#Minimum durability to keep when Veinminer activates
+	durabilityCap = 1
+	#Interpret durabilityCap as ABSOLUTE durability or PERCENTAGE of max durability
+	durabilityThreshold = "ABSOLUTE"
+
+[Cooldown]
+	#Enable a cooldown between Veinminer uses
+	enabled = false
+	#Cooldown duration in seconds
+	seconds = 5
+
+[BlockLimits]
+	#Enable dynamic scaling of max mined blocks based on tool type
+	dynamicMaxBlocks = false
+	#Maximum number of blocks that can be mined at once (if not dynamic)
+	maxBlocks = 64
+	#Minimum block count when using dynamic mode
+	minBlocks = 16
+	#Maximum dynamic block count (when dynamic mode is enabled)
+	maxDynamicBlocks = 64
+
+[Particles]
+	#Show particles around affected blocks when Veinminer activates
+	enabled = true
+	#How long particles last (in ticks)
+	durationTicks = 60
+	#Particle color red value (0–255)
+	red = 255
+	#Particle color green value (0–255)
+	green = 0
+	#Particle color blue value (0–255)
+	blue = 0
+
+[Advanced]
+	#Enable per-tool allowed block lists instead of global list
+	blocksPerTool = false
+
+[Integration]
+	#Automatically hook into LuckPerms if present
+	autoLuckPerms = false
+
